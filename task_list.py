@@ -18,4 +18,17 @@ def uncompleted_tasks(list):
 
     return completed_false
 
+    
 print(uncompleted_tasks(tasks))
+
+def completed_tasks(list):
+    #breakpoint()
+    completed_true = []
+
+    for task in list:
+        if task["completed"] == True:
+          completed_true.append(task["description"])
+
+    return completed_true   
+
+print(completed_tasks(tasks))
