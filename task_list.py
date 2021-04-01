@@ -54,4 +54,18 @@ def time_taken(list, time):
 
     return timer
 
-print(time_taken(tasks, 20))
+#print(time_taken(tasks, 20))
+
+
+
+def task_description(list, chore):
+    job_found = None    
+
+    for job in list:
+        if job["description"] == chore:
+            job_found = job
+        
+    return job_found
+
+
+print(task_description(tasks, "Feed Cat"))
