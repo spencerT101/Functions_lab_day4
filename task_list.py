@@ -7,6 +7,7 @@ tasks = [
     { "description": "Feed Cat", "completed": False, "time_taken": 5 },
     { "description": "Walk Dog", "completed": True, "time_taken": 60 },
 ]
+#print a list of uncompleted tasks
 
 def uncompleted_tasks(list):
     #breakpoint()
@@ -19,7 +20,9 @@ def uncompleted_tasks(list):
     return completed_false
 
     
-#print(uncompleted_tasks(tasks))
+print(uncompleted_tasks(tasks))
+
+#Print a list of completed tasks.
 
 def completed_tasks(list):
     #breakpoint()
@@ -33,6 +36,7 @@ def completed_tasks(list):
 
 #print(completed_tasks(tasks))
 
+# Print a list of all descriptions.
 
 def description_list(list):
     #breakpoint()
@@ -44,6 +48,8 @@ def description_list(list):
     return descriptions 
 
 #print(description_list(tasks))
+
+# Print a list of tasks where time_taken is at least a given time.
 
 def time_taken(list, time):
     timer = []
@@ -57,6 +63,7 @@ def time_taken(list, time):
 #print(time_taken(tasks, 20))
 
 
+# Print any task with a given description.
 
 def task_description(list, chore):
     job_found = None    
