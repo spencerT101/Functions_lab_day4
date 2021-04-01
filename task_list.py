@@ -19,7 +19,7 @@ def uncompleted_tasks(list):
     return completed_false
 
     
-print(uncompleted_tasks(tasks))
+#print(uncompleted_tasks(tasks))
 
 def completed_tasks(list):
     #breakpoint()
@@ -31,7 +31,7 @@ def completed_tasks(list):
 
     return completed_true   
 
-print(completed_tasks(tasks))
+#print(completed_tasks(tasks))
 
 
 def description_list(list):
@@ -43,5 +43,15 @@ def description_list(list):
 
     return descriptions 
 
-print(description_list(tasks))
+#print(description_list(tasks))
 
+def time_taken(list, time):
+    timer = []
+
+    for minutes in list:
+        if minutes["time_taken"] >= time:
+            timer.append(minutes["description"])
+
+    return timer
+
+print(time_taken(tasks, 20))
