@@ -32,3 +32,16 @@ def completed_tasks(list):
     return completed_true   
 
 print(completed_tasks(tasks))
+
+
+def description_list(list):
+    #breakpoint()
+    descriptions= []
+
+    for task in list:
+        descriptions.append(task["description"])
+
+    return descriptions 
+
+print(description_list(tasks))
+
